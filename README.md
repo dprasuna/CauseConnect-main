@@ -57,7 +57,7 @@
 Clone the repository:
 
 ```bash
-$ git clone https://github.com/anuj846k/CauseConnect.git
+$ git clone https://github.com/dprasuna/CauseConnect.git
 $ cd cause-connect
 ```
 

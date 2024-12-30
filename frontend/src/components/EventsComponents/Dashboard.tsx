@@ -66,7 +66,7 @@ const Dashboard = () => {
 
           userId = decodedToken?.userId;
           setUserId(userId);
-          const response = await fetch("http://localhost:5000/api/users/curr", {
+          const response = await fetch("https://causeconnect-main-1.onrender.com/api/users/curr", {
             method: "POST",
             headers: {
               Authorization: `Bearer ${userToken}`,
@@ -95,10 +95,10 @@ const Dashboard = () => {
 
   try {
     const [organizedEvents, volunteeredEvents] = await Promise.all([
-      axios.get("http://localhost:5000/api/events/organized", {
+      axios.get("https://causeconnect-main-1.onrender.com/api/events/organized", {
         withCredentials: true
       }),
-      axios.get("http://localhost:5000/api/events/volunteered", {
+      axios.get("https://causeconnect-main-1.onrender.com/api/events/volunteered", {
         withCredentials: true
       })
     ]);

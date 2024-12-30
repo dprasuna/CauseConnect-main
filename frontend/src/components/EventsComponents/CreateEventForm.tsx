@@ -77,7 +77,7 @@ const CreateEventForm: FC = () => {
       })
 
       await axios.post(
-        'http://localhost:5000/api/events',
+        'https://causeconnect-main-1.onrender.com/api/events',
         submitData,
         {
           withCredentials: true,
